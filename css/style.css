@@ -1,0 +1,59 @@
+body{
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(124, 250, 7);
+    font-weight: bolder;
+}
+#reg-form{
+    width: 500px;
+   
+    margin: 0 auto;
+    margin-top: 100px;
+    align-content: center;
+    background-color: rgba(15, 15, 15, 0.8);
+    border-radius: 0.5rem;
+    text-align: center;
+    
+}
+legend{
+    margin-bottom: 20px;
+}
+.dv{
+     background-color: white;
+     height: 50px;
+     width: 250px;
+     margin: 0 auto;
+     border-radius: 0.5rem;
+     display: flex;
+}
+
+.error{
+    color: red;
+}
+.fa{
+    padding-top: 5px; 
+    font-size: 35px;
+    color: white;
+}
+input{
+    background-color: white;
+    border: none;
+    height: 48px;
+    width: 200px;
+    border-radius: 0.5rem;
+    font-size: 25px;
+    
+}
+i{
+    background-color: blue;
+    height: 45px;
+    width: 50px;
+    margin-right: auto;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+#submit{
+    background-color: blue;
+    margin-bottom: 50px;
+}
