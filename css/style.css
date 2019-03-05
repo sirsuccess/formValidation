@@ -1,12 +1,14 @@
 body{
-    background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/car2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(124, 250, 7);
     font-weight: bolder;
 }
 #reg-form{
-    width: 500px;
+    width: 50vh;
    
     margin: 0 auto;
     margin-top: 100px;

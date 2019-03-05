@@ -2,11 +2,12 @@ $("document").ready(function () {
     var submitBtn = $("#submit")
     function enable() { // function to enable submit button
         submitBtn.attr("disabled", false)
-
+        submitBtn.css("background-color", " rgb(6, 202, 6)");
+        
     }
     function disable() { // function to disable submit button
         submitBtn.attr("disabled", true);
-        //submitBtn.css("background-color", "blue")
+        submitBtn.css("background-color", "blue")
     }
 
 
@@ -14,7 +15,7 @@ $("document").ready(function () {
     username.blur(function () {
         disable();
         $(".error").remove(); //remove previous error messages
-        const usernameVal = username.val();
+        let usernameVal = username.val();
         //checking username
         if (usernameVal === "") { //empty username
             disable();
@@ -27,7 +28,7 @@ $("document").ready(function () {
         }
         else {
             $(".fa-user").css("background-color", " rgb(6, 202, 6)")
-            enable();
+            // enable();
         }
 
     });
@@ -49,7 +50,7 @@ $("document").ready(function () {
         }
         else {
             $(".fa-male").css("background-color", " rgb(6, 202, 6)")
-            enable();
+            // enable();
         }
     });
 
@@ -71,7 +72,7 @@ $("document").ready(function () {
         }
         else {
             $(".pass").css("background-color", " rgb(6, 202, 6)")
-            enable();
+            // enable();
         }
     })
 
@@ -95,9 +96,21 @@ $("document").ready(function () {
         else {
             enable();
             $(".pass1").css("background-color", " rgb(6, 202, 6)");
-            submitBtn.css("background-color", " rgb(6, 202, 6)");
+            // submitBtn.css("background-color", " rgb(6, 202, 6)");
         }
     })
+
+
+    //Enabling the Submit button
+    let usernameVal = username.val();
+    var ageVal = age.val();
+    var passwordVal = password.val();
+    let comfirmedPasswordVal = comfirmedPassword.val();
+    if (usernameVal.length>6 && ageVal>17 && passwordVal.length>7 && comfirmedPasswordVal===passwordVal){
+        
+        enable();
+    }
+
 
 
 });
