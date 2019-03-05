@@ -3,13 +3,12 @@ $("document").ready(function () {
     function enable() { // function to enable submit button
         submitBtn.attr("disabled", false)
         submitBtn.css("background-color", " rgb(6, 202, 6)");
-        
+
     }
     function disable() { // function to disable submit button
         submitBtn.attr("disabled", true);
         submitBtn.css("background-color", "blue")
     }
-
 
     var username = $("#userName");
     username.blur(function () {
@@ -100,17 +99,14 @@ $("document").ready(function () {
         }
     })
 
-
     //Enabling the Submit button
     let usernameVal = username.val();
     var ageVal = age.val();
     var passwordVal = password.val();
     let comfirmedPasswordVal = comfirmedPassword.val();
-    if (usernameVal.length>6 && ageVal>17 && passwordVal.length>7 && comfirmedPasswordVal===passwordVal){
-        
+    if (usernameVal.length > 6 && ageVal > 17 && passwordVal.length > 7 && comfirmedPasswordVal === passwordVal) {
+
         enable();
     }
-
-
 
 });
